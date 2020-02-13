@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style.css">
     <title>MyPortofolio</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   </head>
   <body> <!--style="background-image:linear-gradient(-90deg, #2E2E2E, #525252, #303030, #444444, #303030, #525252, #2E2E2E)"> -->
   <div class="container" id="home">
@@ -113,34 +114,40 @@
                 <p>HTML</p>
              </div>
              <div class="progressbar">
-                <div class="bar-html"></div>
+                <span class="bar-html"></span>
              </div>
+             <div style="padding-left: 12px; padding-top: 6px; font-size: 115%; color: #FC4444" id="html-value-html"></div>
           </div>
+
           <div class="html">
              <div class="tag-css">
                 <p>CSS</p>
              </div>
              <div class="progressbar">
-                <div class="bar-css"></div>
+                <span class="bar-css"></span>
              </div>
+             <div style="padding-left: 12px; padding-top: 6px; font-size: 115%; color: #FC4444" id="html-value-css"></div>
           </div>
           <div class="html">
              <div class="tag-javascript">
                 <p>JS</p>
              </div>
              <div class="progressbar">
-                <div class="bar-javascript"></div>
+                <span class="bar-javascript"></span>
              </div>
+             <div style="padding-left: 12px; padding-top: 6px; font-size: 115%; color: #FC4444" id="html-value-javascript"></div>
           </div>
           <div class="html">
              <div class="tag-php">
                 <p>PHP</p>
              </div>
              <div class="progressbar">
-                <div class="bar-php"></div>
+                <span class="bar-php"></span>
              </div>
-          </div>
-          <div style="margin-top:5%;" id="skills"></div>
+             <div style="padding-left: 12px; padding-top: 6px; font-size: 115%; color: #FC4444" id="html-value-php"></div>
+         </div>
+
+         <div style="margin-top:5%;" id="skills"></div>
       </div>
 
       <div style="margin-bottom:6%;" id="work"></div>
@@ -150,15 +157,23 @@
             <button id="designing">Web Designing</button>
          </div>
          <div class="category-designing">
-             <a href=""><img src="images/portofolio.jpg"></a>
-             <a href=""><img src="images/rabbit.jpg"></a>
+            <div class="first_image">
+               <a href=""><img src="images/portofolio.jpg"></a>
+            </div>
+            <div class="first_image">
+               <a href=""><img src="images/rabbit.jpg"></a>
+            </div>
          </div>
          <div class="work-category">
             <button id="designing">APIs</button>
          </div>
          <div class="category-designing">
-             <a href=""><img src="images/rabbit.jpg"></a>
-             <a href=""><img src="images/rabbit.jpg"></a>
+           <div class="first_image">
+              <a href=""><img src="images/rabbit.jpg"></a>
+           </div>
+           <div class="first_image">
+              <a href=""><img src="images/rabbit.jpg"></a>
+           </div>
          </div>
       </div>
 
@@ -178,5 +193,6 @@
          <p>2020 Copyright. All Rights Reserved.</p>
       </footer>
 
+  <script src="script.js"></script>
   </body>
 </html>
