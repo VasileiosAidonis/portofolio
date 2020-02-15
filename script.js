@@ -4,9 +4,12 @@ var progressMeter = document.querySelectorAll(".progressbar span");
     var moveTimers = [];
     var width = 0;
 
+    /**
+    * AddEventListener at specific point
+    */
     var runOnce = true;
     $(window).scroll(function (){
-        if (($(window).scrollTop() >= 1600) && runOnce){
+        if (($(window).scrollTop() >= 1500 && $(window).scrollTop() < 2100) && runOnce){
             window.addEventListener("scroll",progressNumberAdd);
             runOnce = false;
         }

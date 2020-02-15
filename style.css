@@ -174,6 +174,7 @@ span.space {
 
 .about h1,
 .work h1 {
+  padding-left: 65px;
   padding-top: 30px;
   padding-bottom: 20px;
   font-size: 1000%;
@@ -184,7 +185,7 @@ span.space {
 .about-me-info {
   max-width: 900px;
   background-color: #252627;
-  box-shadow: 0 0 1.2rem rgba(0,0,0,.35);
+  box-shadow: 0 0 2rem rgba(0,0,0,.4);
   padding: 50px;
   position: relative;
   top: -70px;
@@ -192,7 +193,7 @@ span.space {
   right: 50%;
   transform: translateX(-50%);
   z-index: 1;
-  background-image:linear-gradient(-90deg, #292929, #363636 , #303030, #292929, #242424, #1B1B1B);
+  background-image:linear-gradient(-40deg, #303030, #383838, #323232 , #282828, #262626, #222222, #1B1B1B);
 }
 
 .about-me-info p {
@@ -209,6 +210,7 @@ span.space {
 }
 
 .skills h1 {
+  padding-right: 70px;
   padding-top: 30px;
   padding-bottom: 30px;
   text-align: right;
@@ -217,6 +219,7 @@ span.space {
 }
 
 .contact h1 {
+  padding-right: 70px;
   padding-bottom: 30px;
   text-align: right;
   font-size: 1000%;
@@ -356,8 +359,9 @@ div[class^='tag-'] div {
 }
 
 .work-category{
-    padding-left: 5%;
+    padding-left: 10%;
 }
+
 .work-category button {
   border: 2px solid #91111E;
   padding: 15px 30px;
@@ -372,8 +376,8 @@ div[class^='tag-'] div {
 
 
 div[class^='category-'] {
-  margin-top: 35px;
-  padding-left: 25px;
+  margin-top: 32px;
+  padding-left: 8%;
   margin-bottom: 40px;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
@@ -381,12 +385,13 @@ div[class^='category-'] {
 }
 
 div[class^='first_image'] img:hover  {
+  border: none;
   max-width: 700px;
   background-color: #252627;
-  box-shadow: 0 0 1.2rem rgba(0,0,0,.5);
+  box-shadow: 0 0 1.2rem rgba(145,17,30,.5);
   position: relative;
-  transition: 0.6s;
-  transform: scale(1.2) ;
+  transition: all 0.6s ease-in-out;
+  transform: scale(1.15) ;
   z-index: 1;
 }
 .work a {
@@ -400,7 +405,7 @@ div[class^='first_image'] img:hover  {
   width: 350px;
   height: 230px;
   justify: center;
-  border: 1.5px solid #B50030;
+  border: 1.3px solid #B50030;
   border-radius: 3px;
 }
 
