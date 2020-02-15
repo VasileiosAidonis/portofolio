@@ -3,7 +3,14 @@ var progressMeter = document.querySelectorAll(".progressbar span");
     var progressNumberWidths = [80,70,62,68];
     var moveTimers = [];
     var width = 0;
-    window.addEventListener("scroll", progressNumberAdd);
+
+    var runOnce = true;
+    $(window).scroll(function (){
+        if (($(window).scrollTop() >= 1600) && runOnce){
+            window.addEventListener("scroll",progressNumberAdd);
+            runOnce = false;
+        }
+    });
 
     function progressNumberAdd() {
         if (window.pageYOffset > (progressMeter[0].offsetTop - 600)){
@@ -11,6 +18,7 @@ var progressMeter = document.querySelectorAll(".progressbar span");
             initProgressBar();
         }
     }
+
 
     function initProgressBar() {
       for(var i = 0; i < progressMeter.length; i++){
