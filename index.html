@@ -1,236 +1,417 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="style.css">
-    <title>MyPortofolio</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  </head>
-  <body> <!--style="background-image:linear-gradient(-90deg, #2E2E2E, #525252, #303030, #444444, #303030, #525252, #2E2E2E)"> -->
-  <div class="container" id="home">
-      <div style="padding-top:10px;"></div>
-      <div class="container navbar">
-          <header>
-              <a href="#home" style="margin-top: 22px;"><h2>billaidon</h2></a>
-              <div class="d-flex content-justify-end">
-                  <a href="#about" style="border-right: 1.3px solid #fff; padding-right:10px; padding-left:5px;" >about me</a>
-                  <a href="#skills" style="border-right: 1.3px solid #fff; padding-right: 8px; padding-left:5px;">skills</a>
-                  <a href="#work" style="padding-right: 2px; padding-left: 5px;">my work</a>
+<head>
+  <meta charset="utf-8">
+  <title>My Portofolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="assets/css/blobz.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+          integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+          integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js"></script>
+</head>
+<body>
+
+<div class="sidenav">
+    <a href="#home">Who Am I</a>
+    <a id="clickedskills" href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+</div>
+
+<div class="main">
+    <div id="home" class="tab-content">
+        <div class="row">
+          <div class="col-lg">
+            <div class="quotes2" style="border:2px solid #D8D8D8; margin:30px 0px 40px 80px; background-image: url('images/white2.jpg'); background-size: auto 130%;">
+              HERE'S &nbsp;SOME&nbsp; FACTS&nbsp; ABOUT &nbsp;ME &nbsp;
+            </div>
+            <div class="h4">
+              Hello! My name is <span class="the_text">Vasileios</span> Aidonis and I live in Greece. I studied
+              <span class="the_text">Mathematics</span> at the University of Ioannina and finished my Master
+              on <span class="the_text">Data Engineering</span> at the University of Dundee.
+              <br><br><br>
+              <span class="the_text">&#119967;</span>uring my academic year I <span class="the_text">developed
+              </span> projects which include<span class="the_text">:</span><br>
+          		&nbsp;&nbsp;<a class="h1" style="color:#91111E; text-decoration:none;">&#10526;</a>
+            	&nbsp;ETL with SSIS and Power BI for visualization<br>
+            	&nbsp;&nbsp;<a class="h1" style="color:#91111E; text-decoration:none;">&#10526;</a>
+            	&nbsp;Dockerized microservices connected with APIs<br>
+            	&nbsp;&nbsp;<a class="h1" style="color:#91111E; text-decoration:none;">&#10526;</a>
+            	&nbsp;Clustering & Classification with LDA, PCA techniques,<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#8202;&#8202;worked with SVMs<br>
+              &nbsp;&nbsp;<a class="h1" style="color:#91111E; text-decoration:none;">&#10526;</a>
+              &nbsp;Convolutional Neural Networks (CNNs) for Image<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#8202;&#8202;Recognition and metric evaluation<br>
+              &nbsp;&nbsp;<a class="h1" style="color:#91111E; text-decoration:none;">&#10526;</a>
+              &nbsp;and other projects written in Python, Matlab, R. <br>
+
+            </div>
+            <div style="margin-left:660px; font-size:200%; margin-top:-70px;">
+              <span class="the_text" style="font-size:300%;">&#8483;</span><span class="the_text">&#119964;</span>
+            </div>
+            <!-- <div class="image-me">
+              <img src="images/basket3.jpg" height="450" width="350"
+                   style="margin-left:-50px; opacity:90%;">
+            </div> -->
+
+         </div>
+
+          <div class="col-lg">
+            <div class="quotes" style="border:2px solid #D8D8D8; margin:30px 70px 0px 70px; background-image: url('images/white2.jpg'); background-size: auto 130%;">
+                WE people are&nbsp;<br> samples from a&nbsp;<br> Gaussian distribution&nbsp;<br> with a little bit
+                noise&nbsp;<br> added.	&nbsp;&nbsp;&nbsp;<br>
+                The bigger the&nbsp;<br> SUCCESS we make&nbsp;<br> the bigger the&nbsp;<br> NOISE.&nbsp;
+            </div>
+
+
+          </div>
+        </div>
+    </div>
+
+    <div id="skills" class="tab-content">
+          <div class="row">
+            <!--First column -->
+            <div class="col-lg">
+              <div class="quotes2" style="border:2px solid #D8D8D8; margin:30px -22px 40px 70px; background-image: url('images/white2.jpg'); background-size: auto 130%;">
+                SKILLS&nbsp; & &nbsp;INTERESTS&nbsp;
               </div>
-          </header>
-      </div>
-  </div>
-
-      <div class="container main-info-section">
-         <div class="text">
-            <h1>
-                <span>H</span>
-                <span class="space">i</span>
-                <span class="space">,</span>
-                <span>I</span>
-                <span class="space">'</span>
-                <span class="space">m</span>
-                <span class="name">B</span>
-                <span class="space name">i</span>
-                <span class="space name">l</span>
-                <span class="space name">l</span>
-                <span class="space">.</span>
-                <br>
-                <span>I</span>
-                <span class="space">'</span>
-                <span class="space">m</span>
-                <span>a</span>
-                <span class="name">D</span>
-                <span class="space name">a</span>
-                <span class="space name">t</span>
-                <span class="space name">a</span>
-                <span>E</span>
-                <span class="space">n</span>
-                <span class="space">g</span>
-                <span class="space">i</span>
-                <span class="space">n</span>
-                <span class="space">e</span>
-                <span class="space">e</span>
-                <span class="space">r</span>
-                <br>
-                <span class="name">a</span>
-                <span class="space name">n</span>
-                <span class="space name">d</span>
-                <span>t</span>
-                <span class="space">h</span>
-                <span class="space">a</span>
-                <span class="space">t</span>
-                <span class="space">'</span>
-                <span class="space">s</span>
-                <span>m</span>
-                <span class="space">y</span>
-                <br>
-                <span>p</span>
-                <span class="space">o</span>
-                <span class="space">r</span>
-                <span class="space">t</span>
-                <span class="space">o</span>
-                <span class="space">f</span>
-                <span class="space">o</span>
-                <span class="space">l</span>
-                <span class="space">i</span>
-                <span class="space">o</span>
-                <span class="space name">.</span>
-            </h1>
-            <p>Html / Css / &More</p>
-            <a href="#contact">contact me</a>
-         </div>
-         <div class="profile-image">
-            <img src="images/man.jpeg" style="width: 580px;height:430px">
-         </div>
-       </div>
-
-      <div style="margin-bottom:6%;" id="about"></div>
-      <div class="container about">
-          <h1>About</h1>
-          <div class="about-me-info">
-              <p>Let's create MyPortofolio</p>
-              <p>This site was created as a portofolio project</p>
-              <p>Write about myself and the personal qualities</p>
-              <p>---</p>
-              <p>---</p>
-              <p>---</p>
-              <p>---</p>
-              <p>---</p>
-              <p>---</p>
-              <p>Thanks</p>
-          </div>
-          <div style="margin-top:5%;" id="skills"></div>
-      </div>
-
-
-      <div class="container skills">
-          <h1>Skills</h1>
-          <p class="skills-info">FrontEnd & BackEnd languages, tools and frameworks</p>
-          <div class="html">
-             <div class="tag-html">
-               <div class="box">
-                  <div class="box-in">
-                      <div class="box-front">
-                         <div style="color: #fff;">HTML</div>
-                      </div>
-                      <div class="box-back">
-                         <div style="color: gold;">HTML</div>
-                      </div>
+                <div class="h4">
+                  I am very <span class="the_text">passionate</span> about the things I want to develop and the only limit
+                  between me and achieving them is <span class="the_text">time</span>. Some of
+                  the skills I am more experienced with are<span class="the_text">:</span>
+                </div>
+          <!-- ProgressBar Section -->
+            <div style="margin:25px 0px 0px 90px;">
+                <div class="box">
+                   <div class="box-in">
+                       <div class="box-front">
+                          <div style="color: #755139FF; font-family:'Garamond'; font-weight:550;">HTML</div>
+                       </div>
+                       <div class="box-back">
+                          <div style="color: gold; font-family:'Garamond'; font-weight:550;">HTML</div>
+                       </div>
                    </div>
                 </div>
-             </div>
-             <div class="progressbar">
-                <span class="bar-html"></span>
-             </div>
-             <div style="padding-left: 12px; padding-top: 6px; font-size: 115%; color: #FC4444" id="html-value-html"></div>
-          </div>
-
-          <div class="html">
-             <div class="tag-css">
-               <div class="box">
-                  <div class="box-in">
-                      <div class="box-front">
-                         <div style="color: #fff;">CSS</div>
-                      </div>
-                      <div class="box-back">
-                         <div style="color: gold;">CSS</div>
-                      </div>
-                   </div>
+                <div class="progressbar">
+                   <span class="bar-html"></span>
                 </div>
-             </div>
-             <div class="progressbar">
-                <span class="bar-css"></span>
-             </div>
-             <div style="padding-left: 12px; padding-top: 6px; font-size: 115%; color: #FC4444" id="html-value-css"></div>
-          </div>
-          <div class="html">
-             <div class="tag-javascript">
-               <div class="box">
-                  <div class="box-in">
-                      <div class="box-front">
-                         <div style="color: #fff;">JS</div>
-                      </div>
-                      <div class="box-back">
-                         <div style="color: gold;">JS</div>
-                      </div>
-                   </div>
-                </div>
-             </div>
-             <div class="progressbar">
-                <span class="bar-javascript"></span>
-             </div>
-             <div style="padding-left: 12px; padding-top: 6px; font-size: 115%; color: #FC4444" id="html-value-javascript"></div>
-          </div>
-          <div class="html">
-             <div class="tag-php">
-               <div class="box">
-                  <div class="box-in">
-                      <div class="box-front">
-                         <div style="color: #fff;">PHP</div>
-                      </div>
-                      <div class="box-back">
-                         <div style="color: gold;">PHP</div>
-                      </div>
-                   </div>
-                </div>
-             </div>
-             <div class="progressbar">
-                <span class="bar-php"></span>
-             </div>
-             <div style="padding-left: 12px; padding-top: 6px; font-size: 115%; color: #FC4444" id="html-value-php"></div>
-         </div>
+                <div style="margin-left:680px; margin-top: -26px; font-size:115%; color: #91111E;" id="html-value-html"></div>
+                <div style="padding-top:20px;"></div>
 
-         <div style="margin-top:5%;" id="skills"></div>
-      </div>
+                <div class="box">
+                   <div class="box-in">
+                       <div class="box-front">
+                          <div style="color: #755139FF; font-family:'Garamond'; font-weight:550;">CSS</div>
+                       </div>
+                       <div class="box-back">
+                          <div style="color: gold; font-family:'Garamond'; font-weight:550;">CSS</div>
+                       </div>
+                    </div>
+                </div>
+                <div class="progressbar">
+                   <span class="bar-css"></span>
+                </div>
+                <div style="margin-left:680px; margin-top: -26px; font-size:115%; color: #91111E;" id="html-value-css"></div>
+                <div style="padding-top:20px;"></div>
 
-      <div style="margin-bottom:6%;" id="work"></div>
-      <div class="container work">
-         <h1>Work</h1>
-         <div class="work-category">
-            <button id="designing">Web Designing</button>
-         </div>
-         <div class="category-designing">
-            <div class="first_image">
-               <a href=""><img src="images/portofolio.jpg"></a>
-               <!--https://github.com/VasileiosAidonis/portofolio-->
-            </div>
-            <div class="first_image">
-               <a href=""><img src="images/rabbit.jpg"></a>
-            </div>
-         </div>
-         <div class="work-category">
-            <button id="designing">&nbsp;&nbsp; APIs &nbsp;&nbsp;</button>
-         </div>
-         <div class="category-designing">
-           <div class="first_image">
-              <a href=""><img src="images/rabbit.jpg"></a>
-              <!--https://github.com/VasileiosAidonis/ApiGateway-->
+                <div class="box">
+                   <div class="box-in">
+                       <div class="box-front">
+                          <div style="color:#755139FF; font-family:'Garamond'; font-weight:550;">JS</div>
+                       </div>
+                       <div class="box-back">
+                          <div style="color: gold; font-family:'Garamond'; font-weight:550;">JS</div>
+                       </div>
+                    </div>
+                 </div>
+                <div class="progressbar">
+                   <span class="bar-javascript"></span>
+                </div>
+                <div style="margin-left:680px; margin-top:-26px; font-size:115%; color:#91111E;" id="html-value-javascript"></div>
+                <div style="padding-top:20px;"></div>
+
+                <div class="box">
+                   <div class="box-in">
+                       <div class="box-front">
+                          <div style="color: #755139FF; font-family:'Garamond'; font-weight:550;">PHP</div>
+                       </div>
+                       <div class="box-back">
+                          <div style="color: gold; font-family:'Garamond'; font-weight:550;">PHP</div>
+                       </div>
+                    </div>
+                </div>
+                <div class="progressbar">
+                   <span class="bar-php"></span>
+                </div>
+                <div style="margin-left:680px; margin-top:-26px; font-size: 115%; color:#91111E;" id="html-value-php"></div>
+                <div style="padding-top:20px;"></div>
+
+                <div class="box">
+                   <div class="box-in">
+                       <div class="box-front">
+                          <div style="color: #755139FF; font-family:'Garamond'; font-weight:550;">PYTHON</div>
+                       </div>
+                       <div class="box-back">
+                          <div style="color: gold; font-family:'Garamond'; font-weight:550;">PYTHON</div>
+                       </div>
+                    </div>
+              </div>
+              <div class="progressbar">
+                 <span class="bar-python"></span>
+              </div>
+              <div style="margin-left:680px; margin-top:-26px; font-size: 115%; color:#91111E;" id="html-value-python"></div>
+              <div style="padding-top:25px;"></div>
+             </div>
+             <div class="h4">
+               Additionally, I have developed <span class="the_text">microservices with Laravel</span>
+               and Lumen framework working with PHP, <span class="the_text">Django framework</span>
+               exploiting its front-end and back-end capabilities to implement AI for a
+               <span class="the_text">predictive webservice</span>.
+
+             </div>
+
            </div>
-           <div class="first_image">
-              <a href=""><img src="images/rabbit.jpg"></a>
-           </div>
-         </div>
+
+            <!--Bars column -->
+            <div class="col-lg">
+               <!-- style="border-left:1px solid rgba(117,81,57,0.3); height:500px; margin-left:-40px;"> -->
+               <!-- <div style="padding-top:50px;"></div>
+               <img src="images/prom2.jpg" height="300" width="320"
+                    style="border:1px solid rgba(117,81,57,0.7); margin-left:50px; opacity:96%;">
+               <img src="images/robot.jpg" height="400" width="330"
+                    style="margin-left:280px; margin-top:-230px; border:2px solid #333; box-shadow:10px 10px 5px 0px gray; opacity:98%;">
+               <div style="padding-top:30px;"></div> -->
+               <div class="h4" style="margin:40px 70px 0px 70px;">
+                <span class="the_text" style="font-size:180%;">&#8499;</span><span class="the_text">achine
+                <span class="the_text" style="font-size:130%;">&#8466;</span>earning</span> was a field that got my attention at the Master's course, so
+                 I chose as my dissertation project to work on<br>&nbsp;
+                 <span style="font-style:italic;  letter-spacing: 0.8px;  font-size:102%;">"Cost-sensitive deep learning form
+                 skin lesion diagnosis".<br></span> It is an <span class="the_text">Image Recognition</span>
+                 project trained with a CNN model that evaluates methods for achieving
+                 the optimal <span class="the_text">&#8475;eal-</span>
+                 <span class="the_text" style="font-size:115%; font-weight: 550; display: inline-block; -webkit-transform: rotateX(180deg); transform: rotateX(180deg) rotateY(180deg);">&#8499;</span>
+                 <span class="the_text" style="margin-left:-8px;">orld &#8493;ost</span>
+                 of misclassification. It uses TensorFlow and Keras as backend and utilises
+                 <span class="the_text">libraries</span> like Pandas, NumPy, Matplotlib,
+                  SciPy, Seaborn, Scikit-learn, etc.
+               </div>
+               <div class="quotes2" style="border:2px solid #D8D8D8; margin:20px 45px 15px 70px; background-image: url('images/white2.jpg'); background-size: auto 130%;">
+                   For success ATTITUDE&nbsp;<br> is EQUALLY as important&nbsp;<br> as ABILITY.&nbsp;
+                   <br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Walter Scott
+               </div>
+            </div>
+        </div>
       </div>
 
-      <div style="margin-bottom:6%;" id="contact"></div>
-      <div class="container contact">
-         <h1>Contact</h1>
-         <form>
-            <input type="text" name="name" placeholder="Full Name">
-            <input type="email" placeholder="Example@example.com">
-            <textarea name="message" rows="10" cols="30" placeholder="Message"></textarea>
-            <input type="submit">
-         </form>
+
+
+    <div id="projects" class="tab-content">
+
+        <div class="quotes2" style="border:2px solid #D8D8D8; padding-left:100px; margin:30px 40% 40px 80px; background-image: url('images/white2.jpg'); background-size: auto 130%;">
+          SOME &nbsp; OF&nbsp; MY&nbsp; WORK &nbsp;
+        </div>
+        <!-- ROW 1-->
+        <div class="row" style="padding:10px 0px 0px 150px;">
+          <div class="col-sm">
+            <label style="margin-left:-230px;"><span class="the_text" style="font-size:150%;">1.</span>
+              <span class="the_text" style="color:#151515; font-size:130%;"> Microservices</span></label>
+              <div class="gallery" style="margin-top:40px;">
+                 <a href="https://github.com/VasileiosAidonis/ApiGateway"><img src="images/myflix.jpg"
+                   height="200" width="300" style="border:2px solid #91111E;"></a>
+                 <img class="move" src="images/proj1.jpg" height="200" width="300"
+                      style="border:2px solid #91111E; margin-top:-200px;">
+              </div>
+          </div>
+          <div class="col-sm" style="margin-left:-50px;">
+            <label style="margin-left:-235px;"><span class="the_text" style="font-size:150%;">2.</span>
+              <span class="the_text" style="color:#151515; font-size:130%;"> Django with AI</span></label>
+              <div class="gallery" style="margin-top:40px;">
+                 <a href="https://github.com/VasileiosAidonis/Django-AI"><img src="images/django_ai2.png"
+                    height="200" width="300" style="border:2px solid #151515;"></a>
+                 <img class="move" src="images/proj2.jpg" height="200" width="300"
+                      style="border:2px solid #91111E; margin-top:-200px;">
+              </div>
+          </div>
+          <div class="col-sm" style="margin-left:-50px;">
+            <label style="margin-left:-200px;"><span class="the_text" style="font-size:150%;">3.</span>
+              <span class="the_text" style="color:#151515; font-size:130%;"> CNNs</span></label>
+              <div class="gallery" style="margin-top:40px;">
+                 <a href="https://github.com/VasileiosAidonis/CNNs"><img src="images/cnn.jpg"
+                    height="200" width="300" style="border:2px solid #91111E;"></a>
+                 <img class="move" src="images/proj3.jpg" height="200" width="300"
+                      style="border:2px solid #91111E; margin-top:-200px;">
+              </div>
+          </div>
+
+        </div>
+
+        <!-- ROW 2-->
+        <div class="row" style="padding:50px 0px 0px 250px;">
+          <div class="col-sm" style="margin-left:-100px;">
+            <label style="margin-left:-220px;"><span class="the_text" style="font-size:150%;">4.</span>
+              <span class="the_text" style="color:#151515; font-size:130%;"> ETL project</span></label>
+              <div class="gallery" style="margin-top:40px;">
+                 <a href="https://github.com/VasileiosAidonis/ETL_project"><img src="images/BI.png"
+                    height="200" width="300" style="border:2px solid #91111E;"></a>
+                 <img class="move" src="images/proj4.jpg" height="200" width="300"
+                      style="border:2px solid #91111E; margin-top:-200px;">
+              </div>
+          </div>
+          <div class="col-sm" style="margin-left:-30px;">
+            <label style="margin-left:-215px;"><span class="the_text" style="font-size:150%;">5.</span>
+              <span class="the_text" style="color:#151515; font-size:130%;"> Portofolio</span></label>
+              <div class="gallery" style="margin-top:40px;">
+                 <a href="https://github.com/VasileiosAidonis/portofolio"><img src="images/porto1.jpg"
+                    height="200" width="300" style="border:2px solid #91111E;"></a>
+                 <img class="move" src="images/proj5.jpg" height="200" width="300"
+                      style="border:2px solid #91111E; margin-top:-200px;">
+              </div>
+          </div>
+          <div class="col-sm">
+            <div class="h4" style="margin-top:130px;">
+              <span style="font-size:130%; font-family:'Times New Roman';">More projects<br>
+              <span class="the_text" style="font-size:120%; margin-left:50px; background-color:transparent;">coming soon</span>
+            </div>
+
+              <div class="row examples" style="margin-top:-26px; margin-left:270px;">
+                <div class="col-3">
+                  <div class="snippet" data-title=".dot-elastic">
+                    <div class="stage">
+                      <div class="dot-elastic"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+          </div>
+        </div>
+
+
+    </div>
+
+    <div id="contact" class="tab-content" style="margin-right:-150px;">
+      <div class="row">
+        <div class="col-lg">
+          <div class="quotes2" style="border:2px solid #D8D8D8; padding-left:100px; margin:30px -60px 40px 80px; background-image: url('images/white2.jpg'); background-size: auto 130%;">
+            HOW &nbsp;TO&nbsp; REACH&nbsp; ME &nbsp;
+          </div>
+          <div style="padding-top:20px;"></div>
+            <div class="reachme">
+              <a href="https://www.linkedin.com/in/vasilis-aidonis-56648b90/"><img src="images/link1.png" height="90"></a>
+              <span class="contact_text">On LinkedIn</span>
+            </div>
+            <div class="reachme">
+              <a href="mailto:aidonisbusiness@gmail.com"><img src="images/email1.png" height="90" style="background-color:weight;"></a>
+              <span class="contact_text">Via Email</span>
+            </div>
+            <div class="reachme">
+              <a href="https://github.com/VasileiosAidonis"><img src="images/git2.png" height="90"></a>
+              <span class="contact_text">On GitHub</span>
+            </div>
+            <!-- Left Pillars-->
+            <div class="quotes2" style="border:2px solid #D8D8D8; margin: -375px 620px 20px 120px; background-image: url('images/white2.jpg'); background-size: auto 130%;">
+              <!-- 1. <div style="margin-top:50px;"></div>2. <div style="margin-top:50px;"></div> 3.<br> -->
+              <div style="margin-top:350px;"></div>
+            </div>
+            <div class="quotes2" style="border:2px solid #D8D8D8; margin: -435px 620px 20px 120px; background-image: url('images/pillar1.jpg'); background-size: auto 50%;">
+              <div style="margin-top:350px;"></div>
+            </div>
+
+
+
+            <div class="quotes2" style="border:2px solid #D8D8D8; margin: -435px -10px 20px 750px; background-image: url('images/pillar1.jpg'); background-size: auto 50%;">
+              <div style="margin-top:350px;"></div>
+            </div>
+
+            <!-- Right Pillars-->
+            <div class="quotes2" style="font-size:150%; padding-left:230px; padding-top:40px; text-decoration:none; border:2px solid #D8D8D8; margin:30px -50px 0px 80px; background-image: url('images/white2.jpg'); background-size: auto 280%;">
+               Copyright &#169; 2020. &#8202;&#8202;All rights Reserved
+            </div>
+            <div class="quotes2" style="margin:-195px -30px 20px 730px; background-image: url('images/white2.jpg'); background-size: auto 130%;">
+              <div style="margin-top:15px;"></div>
+            </div>
+            <div class="quotes2" style="margin:-538px -30px 20px 730px; background-image: url('images/white2.jpg'); background-size: auto 130%;">
+              <div style="margin-top:15px;"></div>
+            </div>
+
+            <div class="quotes2" style="margin:-95px 600px 20px 100px; background-image: url('images/white2.jpg'); background-size: auto 130%;">
+              <div style="margin-top:15px;"></div>
+            </div>
+            <div class="quotes2" style="margin:368px 600px 20px 100px; background-image: url('images/white2.jpg'); background-size: auto 130%;">
+              <div style="margin-top:15px;"></div>
+            </div>
+
+            <!-- <svg viewBox="0 0 300 333" style="margin:-50px 30px 0px -50px;" height="290">
+              <path class="path3" fill="#151515" stroke="#91111E" stroke-width="6" d="M66.039,133.545c0,0-21-57,18-67s49-4,65,8
+                s30,41,53,27s66,4,25,32s-5,18,44,57s22,46,0,45s-54-40-68-16s-40,88-83,48s11-61-11-80s-79-7-70-41
+                C46.039,146.545,53.039,128.545,66.039,133.545z"/>
+            </svg> -->
+
+
+        </div>
+
+        <div class="col-lg" style="margin-left:50px;">
+          <svg viewBox="0 0 630 600" height="220" style="margin-top:300px; margin-left:-20px;">
+            <path class="path3" fill="#151515" stroke="#91111E" stroke-width="8" d="M 550 300 L 350 50 L 250 150 L 450 400 L 600 450 L 550 300 L 450 400 "/>
+          </svg>
+          <!-- <div style="padding-top:500px;"></div> -->
+          <div class="h4" style="margin-top:-150px; margin-left:200px;">
+            <span style="font-size:180%; font-family:'Times New Roman';">Feel Free to<br>
+            <span class="the_text" style="font-size:210%; background-color:transparent;">CONTACT</span> me!</span>
+          </div>
+
+          <div class="quotes2" style="border:1px solid #D8D8D8; margin:0px 250px 0px 150px; background-image: url('images/white2.jpg'); background-size: auto 100%;">
+            <div style="margin-top:10px;"></div>
+          </div>
+          <div class="quotes2" style="border:1px solid #D8D8D8; margin:0px 350px 0px 250px; background-image: url('images/white2.jpg'); background-size: auto 100%;">
+            <div style="margin-top:10px;"></div>
+          </div>
+          <div class="quotes2" style="border:1px solid #D8D8D8; margin:0px 420px 0px 320px; background-image: url('images/white2.jpg'); background-size: auto 100%;">
+            <div style="margin-top:10px;"></div>
+          </div>
+          <div class="quotes2" style="border:1px solid #D8D8D8; margin:0px 300px 0px 200px; background-image: url('images/white2.jpg'); background-size: auto 100%;">
+            <div style="margin-top:10px;"></div>
+          </div>
+          <!-- Flame 1-->
+          <!-- <div class="quotes2" style="height:380px; margin:-670px 300px 0px 200px; background-image: url('images/flame1.jpg'); background-size: auto 110%;">
+            <div style="margin-top:10px;"></div>
+          </div> -->
+
+          <!-- <svg viewBox="0 0 300 333" style="margin:-50px 30px 0px -50px;" height="290">
+            <path class="path3" fill="#151515" stroke="#91111E" stroke-width="6" d="M66.039,133.545c0,0-21-57,18-67s49-4,65,8
+              s30,41,53,27s66,4,25,32s-5,18,44,57s22,46,0,45s-54-40-68-16s-40,88-83,48s11-61-11-80s-79-7-70-41
+              C46.039,146.545,53.039,128.545,66.039,133.545z"/>
+          </svg> -->
+
+          <!-- Flame2 -->
+          <!-- <svg viewBox="0 0 600 503" style="margin:-420px 30px 0px 130px;" height="400"> -->
+            <!-- <path class="path1" fill="#91111E" stroke="#F8F8F8" stroke-width="12" d="M 450 100 C 500 250 500 300 500 350 C 500 400 450 450 500 500 C 300 500 500 500 150 500 C 200 400 100 400 150 250 C 150 50 200 250 200 300 C 175 225 225 225 250 100 C 225 200 275 200 250 300 C 250 200 300 200 300 0 C 300 200 400 150 350 350 C 400 50 350 250 400 50 C 400 250 450 200 450 300 C 450 300 450 300 450 100 "/>
+            <path class="path3" fill="#91111E" stroke="#FF9933" stroke-width="8" d="M 450 100 C 500 250 500 300 500 350 C 500 400 450 450 500 500 C 300 500 500 500 150 500 C 200 400 100 400 150 250 C 150 50 200 250 200 300 C 175 225 225 225 250 100 C 225 200 275 200 250 300 C 250 200 300 200 300 0 C 300 200 400 150 350 350 C 400 50 350 250 400 50 C 400 250 450 200 450 300 C 450 300 450 300 450 100 "/> -->
+            <!-- <path class="path2" fill="#91111E" stroke="orange" stroke-width="6" d="M 450 100 C 500 250 500 300 500 350 C 500 400 450 450 500 500 C 300 500 500 500 150 500 C 200 400 100 400 150 250 C 150 50 200 250 200 300 C 175 225 225 225 250 100 C 225 200 275 200 250 300 C 250 200 300 200 300 0 C 300 200 400 150 350 350 C 400 50 350 250 400 50 C 400 250 450 200 450 300 C 450 300 450 300 450 100 "/>
+          </svg> -->
+
+
+          <!-- <div class="h3">
+            <hr class="accessory" style="margin:-40px 150px 0px -100px;">
+          </div> -->
+
+        </div>
       </div>
+    </div>
+</div>
 
-      <footer>
-         <hr>
-         <p>2020 Copyright. All Rights Reserved.</p>
-      </footer>
 
-  <script src="script.js"></script>
-  </body>
+
+
+
+
+</body>
+<script src="script.js"></script>
 </html>
